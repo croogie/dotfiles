@@ -1,49 +1,10 @@
 
-# mercurial aliases
-alias h='hg status'
-alias hb='hg branch'
-alias ht='hg tag'
-alias hc='hg commit -m'
-alias hci='hg commit -I . -m'
-alias haci='hg commit -I . -A -m'
-alias hcl='hg clone'
-alias hf='hg fetch'
-alias hps='hg push'
-alias hpl='hg pull'
-alias ha='hg add'
-alias hl='hg log'
-alias hs='hg serve'
-alias hu='hg up'
-alias hdi='hg diff'
-alias hout='hg outgoing'
-alias hin='hg incoming'
-alias hh='hg heads'
-
-# subversion aliases
-alias si='svn info'
-alias sup='svn update'
-alias siu='svn info | grep URL'
-alias ss='svn switch'
-alias s='svn st'
-alias sls='svn ls'
-alias sm='svn merge'
-alias stc='svn st | grep "^ *C.*"'
-alias sl='svn log'
-alias sl5='svn log -v -l5'
-alias sl10='svn log -v -l10'
-alias sl15='svn log -v -l15'
-alias sco='svn checkout'
-alias sci='svn ci -m'
-alias smi='svn merge --reintegrate'
-alias sad='svn add'
-
-# editors aliases
-alias v='vim'
-
 # navigation aliases
 alias ..='cd ..'
 alias cdd='cd -'
-alias l='ls -la --color=auto'
+alias l='ls -lhXGa --color=auto'
+
+alias upgrade='sudo apt-get update && sudo apt-get upgrade'
 
 function take {
   mkdir -p $1

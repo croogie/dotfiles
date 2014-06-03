@@ -1,9 +1,10 @@
 export EDITOR=vim
 export CDPATH=$HOME/websites:$CDPATH
 export PYTHONPATH=$HOME/py-lib:$PYTHONPATH
-export PATH=~/bin:$PATH:~/android-sdks/tools:~/android-sdks/platform-tools
+export PATH=/opt/glassfish3/bin:~/bin:$HOME/npm/bin:$PATH:~/android-sdks/tools:~/android-sdks/platform-tools
 export ANDROID_HOME=~/android-sdks
 export GOOGLE_ANALYTICS=~/android-sdks/extras/google/analytics_sdk
+export NODE_PATH=$NODE_PATH:$HOME/npm/lib/node_modules
 
 ## set UTF encoding in bash
 ## export LANG=pl_PL.UTF-8
