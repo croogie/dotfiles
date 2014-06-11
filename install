@@ -1,0 +1,10 @@
+#!/bin/bash
+
+SCRIPT=$(readlink -f "$0")
+SCRIPTPATH=$(dirname "$SCRIPT")
+
+. $SCRIPTPATH/bash/functions
+
+echo ". $SCRIPTPATH/bashrc" >> $HOME/.bashrc
+
+box "Everything is installed correctly. Please relogin!"
