@@ -6,10 +6,6 @@ alias l='ls -lhXGa --color=auto'
 
 alias upgrade='sudo apt-get update && sudo apt-get upgrade'
 
-function take {
-  mkdir -p $1
-  cd $1 
-}
 
 # todo.txt alias
 alias t='todo.sh -tnA'
@@ -17,7 +13,6 @@ complete -F _todo t # enable autocompletion for t alias
 
 # configuration aliases
 alias reload='source ~/.bashrc'
-alias ea='vim ~/bin/dotfiles/bash/aliases'
 
 # system aliases
 alias sai='sudo apt-get install'
