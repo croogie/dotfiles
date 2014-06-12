@@ -1,6 +1,8 @@
-. ~/bin/dotfiles/bash/env
-. ~/bin/dotfiles/bash/config
-. ~/bin/dotfiles/bash/functions
-. ~/bin/dotfiles/bash/aliases
-. ~/bin/dotfiles/bash/applications
+#!/bin/bash
 
+SCRIPTPATH=$(cd `dirname "${BASH_SOURCE[0]}"` && pwd)/
+
+. $SCRIPTPATH/bash/env
+. $SCRIPTPATH/bash/config
+. $SCRIPTPATH/bash/functions
+. $SCRIPTPATH/bash/aliases

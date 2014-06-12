@@ -1,2 +1,3 @@
 function box(){ t="$1xxxx";c=${2:-=}; echo ${t//?/$c}; echo "$c $1 $c"; echo ${t//?/$c}; }
 
+function take { mkdir -p $1; cd $1; }
